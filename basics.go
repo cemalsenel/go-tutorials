@@ -22,7 +22,8 @@ func main() {
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
 
-	var greeting string = "Hello there"
+	var greeting string 
+	greeting = "Hello there"
 	fmt.Println(greeting)
 
 	var i, j int = 1, 2
@@ -42,7 +43,18 @@ func main() {
 
 	var first string = "Jack"
 	var mark int = 34
-	fmt.Printf("Hey, %v! You have scored %d/100 in Math", first, mark)
+	fmt.Printf("Hey, %v! You have scored %d/100 in Math\n", first, mark)
+
+	var (
+		city string = "Berlin"
+		number = 3
+	)
+	fmt.Println(city, number)
+
+	country := "Germany"
+	country = "France"
+	// country = 12 => type of variable cannot be changed
+	fmt.Println(country)
 }
 
 // this is a single line comment
