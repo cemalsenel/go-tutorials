@@ -43,8 +43,18 @@ func main(){
 	fmt.Println("Number of elements copied: ", num)
 
 
-	//* lloping through a slice
+	//* looping through a slice
 	for index, value := range copy_slice {
 		fmt.Println(index, "=>", value)
 	}
+
+
+	arr5 := [5]int{10, 20, 90, 70, 60}
+	slice5 := arr5[:3]
+	fmt.Println(cap(slice5))
+
+	slice_5 := make([]int, 5, 20)
+	new_slice5 := append(slice5, slice_5...)
+	fmt.Println(cap(new_slice5))
+	fmt.Println(new_slice5)
 }
