@@ -15,3 +15,7 @@ func addNumbers(a int, b int) int {
 func printGreeting(str string) {
 	fmt.Println("Hey there,", str)
 }
+
+func returnCube(n int) int {
+	return n*n*n
+}
