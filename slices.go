@@ -11,7 +11,10 @@ func main(){
 	arr := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 	slice_1 := arr[1:8]
-	fmt.Println(slice_1)
+	slice_1[0] = 11
+	fmt.Println(slice_1) //* [11 3 4 5 6 7 8]
+	fmt.Println(arr) //* [1 11 3 4 5 6 7 8 9 10]
+
 
 	slice1 := make([]int, 5, 10)
 
